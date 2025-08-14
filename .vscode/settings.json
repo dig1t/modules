@@ -1,0 +1,13 @@
+{
+	"luau-lsp.diagnostics.workspace": true,
+	"luau-lsp.require.mode": "relativeToFile",
+	"luau-lsp.sourcemap.autogenerate": true,
+	"luau-lsp.ignoreGlobs": [
+		"**/_Index/**",
+	],
+
+	"[luau]": {
+		"editor.defaultFormatter": "JohnnyMorganz.stylua",
+		"editor.formatOnSave": true
+	}
+}

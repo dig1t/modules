@@ -1,0 +1,21 @@
+# configuration files
+*.code-workspace
+
+# local vscode files
+.vscode/*
+!.vscode/*.code-snippets
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# dependencies
+Packages
+node_modules
+
+# generated files
+package-lock.json
+sourcemap.json
+*.exe
+*.lock
+.DS_Store
+*.rbxlx
+*.rbxl
