@@ -4,22 +4,24 @@
 	Author: dig1t
 
 	Description: A function that automatically resizes the canvas of a ScrollingFrame to perfectly
-	fit all elements when the content changes. Either UIListLayout or UIGridLayout must be a child of
+	fit all contents when a new child is added, changed, removed, or if the player screen resizes.
+
+	Either UIListLayout or UIGridLayout must be a child of
 	the ScrollingFrame in order for this function to work.
 
 	It returns a connection that can be used to disconnect the automatic resizing.
-	This is useful for when the ScrollingFrame is no longer needed, such as when the parent ScreenGui
+	This is useful when the ScrollingFrame is no longer needed, such as when the parent ScreenGui
 	is no longer Enabled or when the ScrollingFrame is destroyed.
 
 	Usage:
 	```lua
-		local AutoCanvasSize = require(ReplicatedStorage.Modules.AutoCanvasSize)
+	local AutoCanvasSize = require(ReplicatedStorage.Modules.AutoCanvasSize)
 
-		local myScrollingFrame = Players.LocalPlayer.PlayerGui.Inventory.ScrollingFrame
-		local connection = AutoCanvasSize(myScrollingFrame)
+	local myScrollingFrame = Players.LocalPlayer.PlayerGui.Inventory.ScrollingFrame
+	local connection = AutoCanvasSize(myScrollingFrame)
 
-		-- To disconnect the automatic resizing
-		connection:Disconnect()
+	-- To stop automatic canvas resizing
+	connection:Disconnect()
 	```
 ]=]
 
